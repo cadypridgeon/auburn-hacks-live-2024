@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --primary: #ffffff;
+  --secondary: #e1deed;
+  --tertiary: #c9aecc;
+  --accent: #f2b488;
+  --background: #251f47;
+  --link: #97ebfc;
+  --visited: #babefc;
+
+  font-size: 16px;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  overscroll-behavior: none;
+  background: linear-gradient(180deg, #1E1939 0%, #77347F 100%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  color: white;
+}
+
+.show {
+  opacity: 100%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.link {
+  color: var(--link);
+  transition: color 0.2s ease-in-out;
+}
+
+.link:visited {
+  color: var(--visited);
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+/* ✿✿✿ COLORS ✿✿✿ */
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+.tertiary {
+  color: var(--tertiary);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.background {
+  color: var(--background);
+}
+
+/* ✿✿✿ TYPOGRAPHY ✿✿✿ */
+
+.h1 {
+  font-family: "good-times", sans-serif;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.h1-mobile {
+  font-family: "good-times", sans-serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-family: "good-times", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+
+.h2-mobile {
+  font-family: "good-times", sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-family: "good-times", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+
+.h3-mobile {
+  font-family: "good-times", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+.body-xl {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.body-l {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.body-l-mobile {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.body-m {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.body-m-mobile {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.body-s {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.body-s-mobile {
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.primary-button {
+  display: inline-flex;
+  padding: 0.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: var(--primary);
+  color: var(--background);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.primary-button:hover {
+  background-color: var(--accent);
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  justify-content: space-between;
+  flex-shrink: 0;
+  font-family: "Inclusive Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary);
+  background-color: rgba(255, 255, 255,0.08);
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.navbar .logo {
+
+  margin-left: 1rem;
+  display: flex;
+  width: 12rem;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  /* align-items: center; */
+  /* gap: 16px; */
+  /* font-size: 20px; */
+}
+
+.logo-text {
+  font-family: "good-times", sans-serif;
+}
+/* FIXME: Not the right font */
+
+.navbar .logo img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.navbar .navigation {
+  margin-left: 2rem;
+  margin-right: 9rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.navbar .navigation a:not(.primary-button):hover {
+  color: var(--accent);
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.accent-on-hover:hover {
+  color: var(--accent);
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#mlh-trust-badge {
+  display: flex;
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  flex-shrink: 0;
+}
+
+.social-button {
+  font-family: 'Inclusive Sans', sans-serif;
+}
