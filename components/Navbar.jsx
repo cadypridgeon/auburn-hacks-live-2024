@@ -17,11 +17,21 @@ const Navbar = () => {
           <Logo />
         </Link>
         <div className="navigation flex flex-row">
-          <Link href="/">Home</Link>
-          <Link href="/schedule">Schedule</Link>
-          <Link href="/sponsors">Sponsors</Link>
-          <Link href="/speakers">Speakers</Link>
-          <Link href="/prizes">Prizes</Link>
+          <Link href="/">
+            <span className={inclusiveSans.className}>Home</span>
+          </Link>
+          <Link href="/schedule">
+            <span className={inclusiveSans.className}>Schedule</span>
+          </Link>
+          <Link href="/sponsors">
+            <span className={inclusiveSans.className}>Sponsors</span>
+          </Link>
+          <Link href="/speakers">
+            <span className={inclusiveSans.className}>Speakers</span>
+          </Link>
+          <Link href="/prizes">
+            <span className={inclusiveSans.className}>Prizes</span>
+          </Link>
           <a
             id="mlh-trust-badge"
             href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
