@@ -6,10 +6,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Inclusive_Sans } from "next/font/google";
+
 import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
+import { Inclusive_Sans } from "next/font/google";
 const inclusiveSans = Inclusive_Sans({
   subsets: ["latin", "latin-ext"],
   weight: "400",
@@ -23,6 +24,7 @@ export default function Speakers() {
       <div className="mt-[4rem] flex items-center">
         <Carousel className=" flex items-center">
           <CarouselContent>
+            {/* Copy and Paste Carousel item to add more items */}
             <CarouselItem className="">
               <div className="p-1">
                 <Card className="bg-opacity-15 flex">
