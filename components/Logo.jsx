@@ -42,11 +42,7 @@ export const Logo = () => {
         stroke="white"
         strokeMiterlimit="10"
       />
-      <path
-        d="M17.6068 18.1512H11.6045"
-        stroke="white"
-        strokeMiterlimit="10"
-      />
+      <path d="M17.6068 18.1512H11.6045" stroke="white" strokeMiterlimit="10" />
       <path
         d="M28.4216 30.2886L24.4125 32.9527L19.1006 32.2137L23.518 29.1802C23.518 29.1802 25.0931 28.1982 25.3945 28.1593C25.696 28.1204 27.3975 26.555 27.3975 26.555L28.4184 30.2918L28.4216 30.2886Z"
         stroke="white"

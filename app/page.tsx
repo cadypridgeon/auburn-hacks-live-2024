@@ -14,8 +14,17 @@ export default function Home() {
       <div className="mt-[12rem] flex items-center justify-center flex-col text-center">
         <div className=" space-y-4">
           <h1 className="h1">Auburn Hacks</h1>
-          { /* Oh, would you look at that? I wonder what this does. */}
-          <h2 className="h2 text-gray-200">February <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="blank">3-4</Link>, 2024</h2>
+          {/* Oh, would you look at that? I wonder what this does. */}
+          <h2 className="h2 text-gray-200">
+            February{" "}
+            <Link
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              target="blank"
+            >
+              3-4
+            </Link>
+            , 2024
+          </h2>
         </div>
         <div>
           <div className="mt-8 flex flex-row gap-6">
@@ -33,7 +42,7 @@ export default function Home() {
             <SocialButton
               name="Notion"
               icon={<RiNotionFill size="3em" />}
-              link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              link="https://aub.ie/HacksNotion24"
             />
             {/* REPLACE LINK */}
             <SocialButton

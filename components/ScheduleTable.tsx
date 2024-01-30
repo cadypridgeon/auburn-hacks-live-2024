@@ -31,36 +31,20 @@ const ScheduleTable = () => {
           <td></td>
           <td
             rowSpan={2}
-            className=" bg-yellow-100 text-black w-full rounded-md"
+            className=" bg-yellow-100 text-black w-full rounded-[1rem]"
           >
-            <button
-              onClick={() => {
-                const modal = document.getElementById(
-                  "my_modal_1"
-                ) as HTMLDialogElement;
-                if (modal) {
-                  modal.showModal();
-                }
-              }}
-            >
-              <dialog id="my_modal_1" className="modal">
-                <div className="modal-box">
-                  <h3 className="font-bold text-lg">Breakfast</h3>
-                  <p className="py-4">8 AM - 10 AM @ Grand Ballroom</p>
-                  <p className="py-4">Fuel up for the rest of the day</p>
-                </div>
-              </dialog>
-              <div className="">
-                <div className="">Breakfast Arrives</div>
-                <div className=" opacity-70">Grand Hall</div>
-              </div>
-            </button>
+            <TableRowWithModal
+              title={"Breakfast"}
+              time={"8 AM - 10 AM"}
+              loc={"Grand Hall"}
+              desc={"Fuel up for the rest of the day!"}
+            />
           </td>
           <td>8 AM</td>
         </tr>
         <tr className="text-center h-12">
           <td>9 AM</td>
-          <td rowSpan={2} className=" bg-purple-200 rounded-md text-black">
+          <td rowSpan={1} className=" bg-purple-200 rounded-[1rem] text-black">
             <TableRowWithModal
               title={"Check In"}
               time={"9 AM - 11 AM"}
@@ -73,6 +57,7 @@ const ScheduleTable = () => {
         </tr>
         <tr className="text-center  h-12">
           <td>10 AM</td>
+          <td>Placeholder</td>
           <td>Placeholder</td>
           <td>10 AM</td>
         </tr>
@@ -195,7 +180,7 @@ const TableRowWithModal = ({ title, time, loc, desc }: TableRowWithModal) => {
       </dialog>
       <div className="">
         <div className="">{title}</div>
-        <div className=" opacity-70">{desc}</div>
+        <div className=" opacity-70">{loc}</div>
       </div>
     </button>
   );

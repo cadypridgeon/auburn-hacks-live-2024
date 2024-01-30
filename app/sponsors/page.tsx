@@ -26,9 +26,15 @@ export default function Sponsors() {
               Southwest Research Institute
             </span>
           </h2>
-          <p className="text-center">blah blah blah info here</p>
+          <p className="text-center">
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
-        <div className=" bg-white bg-opacity-15 p-5 rounded-[1rem]">
+        <div className=" bg-white bg-opacity-15 p-5 rounded-[1rem] max-w-md">
           <Link href="https://www.mcleodsoftware.com/">
             <div className="bg-white rounded-[1rem] p-2 hover:bg-[#F2B488] transition">
               <McLeodLogo className="fill-[#251F47] h-36" />
@@ -37,7 +43,13 @@ export default function Sponsors() {
           <h2 className="text-3xl text-center">
             <span className={inclusiveSans.className}>McLeod Software</span>
           </h2>
-          <p className="text-center">blah blah blah info here</p>
+          <p className="text-center">
+            {" "}
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
         </div>
       </div>
     </div>
