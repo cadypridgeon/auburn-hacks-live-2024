@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/carousel";
 
 import Image from "next/image";
-import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import { Inclusive_Sans } from "next/font/google";
 const inclusiveSans = Inclusive_Sans({
