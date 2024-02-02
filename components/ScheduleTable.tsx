@@ -228,7 +228,7 @@ interface TableRowWithModal {
 
 const TableRowWithModal = ({ title, time, loc, desc }: TableRowWithModal) => {
   return (
-    <button
+    <div
       onClick={() => {
         const modal = document.getElementById(
           `modal_${title}`
@@ -237,21 +237,31 @@ const TableRowWithModal = ({ title, time, loc, desc }: TableRowWithModal) => {
           modal.showModal();
         }
       }}
+      className="hover:cursor-pointer"
     >
       <dialog id={"modal_" + title} className="modal">
         <div className="modal-box">
+          <form method="dialog">
+            {/* if there is a button in form, it will close the modal */}
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
           <h3 className="font-bold text-lg">{title}</h3>
           <p className="py-4">
             {time} @ {loc}
           </p>
           <p className="py-4">{desc}</p>
         </div>
+        <form method="dialog" className="modal-backdrop">
+          <button>close</button>
+        </form>
       </dialog>
       <div className="">
         <div className="">{title}</div>
         <div className=" opacity-70">{loc}</div>
       </div>
-    </button>
+    </div>
   );
 };
 
