@@ -6,6 +6,7 @@ import { RiNotionFill } from "react-icons/ri";
 import { FiMapPin } from "react-icons/fi";
 import { LuHeartHandshake } from "react-icons/lu";
 import { IoMailOutline } from "react-icons/io5";
+import { TbDeviceDesktopPin } from "react-icons/tb";
 import Link from "next/link";
 
 export default function Home() {
@@ -29,6 +30,11 @@ export default function Home() {
         <div>
           <div className="mt-8 flex flex-row gap-6">
             <SocialButton
+              name="Check-In"
+              icon={<TbDeviceDesktopPin size="3em" />}
+              link="https://checkin-client-3go6ohb3fq-ue.a.run.app/"
+            />
+            <SocialButton
               name="Discord"
               icon={<FaDiscord size="3em" />}
               link="https://discord.gg/DK4crCtSQQ"
@@ -38,13 +44,11 @@ export default function Home() {
               icon={<SiDevpost size="3em" />}
               link="https://auburnhacks-2024.devpost.com/"
             />
-            {/* REPLACE LINK */}
             <SocialButton
               name="Notion"
               icon={<RiNotionFill size="3em" />}
               link="https://aub.ie/HacksNotion24"
             />
-            {/* REPLACE LINK */}
             <SocialButton
               name="BK Map"
               icon={<FiMapPin size="3em" />}
