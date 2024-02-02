@@ -12,8 +12,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="mt-[12rem] flex items-center justify-center flex-col text-center">
-        <div className=" space-y-4">
+      <div className="mt-[12rem] flex items-center justify-center flex-col text-center space-y-8">
+        <div className=" space-y-8">
           <h1 className="h1">Auburn Hacks</h1>
           {/* Oh, would you look at that? I wonder what this does. */}
           <h2 className="h2 text-gray-200">
