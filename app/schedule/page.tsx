@@ -5,7 +5,7 @@ export default function Schedule() {
     <div className="flex min-h-screen flex-col items-center p-24">
       <h1 className="h1 mt-[6rem]">Schedule</h1>
 
-      <div className="mt-[4rem] max-w-6xl">
+      <div className=" max-w-6xl">
         <ScheduleTable />
       </div>
     </div>
