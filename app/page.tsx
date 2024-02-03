@@ -28,7 +28,7 @@ export default function Home() {
           </h2>
         </div>
         <div>
-          <div className="mt-8 flex flex-row gap-6">
+          <div className="mt-4 flex flex-row gap-6">
             <SocialButton
               name="Check-In"
               icon={<TbDeviceDesktopPin size="3em" />}
